@@ -22,8 +22,8 @@ public class OrderController {
         return new ResponseEntity<>(orderService.save(orderDto), HttpStatus.OK);
     }
 
-    @GetMapping(path = "/read")
-    public ResponseEntity<OrderDto> readOrder(){
-        return new ResponseEntity<>(orderService.read(),HttpStatus.OK);
-    }
+//    @GetMapping(path = "/read")
+//    public ResponseEntity<OrderDto> readOrder(){
+//        return new ResponseEntity<>(orderService.read(),HttpStatus.OK);
+//    }
 }

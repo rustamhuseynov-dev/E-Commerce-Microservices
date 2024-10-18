@@ -27,7 +27,7 @@ public class OrderService {
         return OrderMapper.ORDER_MAPPER.convert(order);
     }
 
-    public OrderDto read() {
-        rabbitTemplate.se
-    }
+//    public OrderDto read() {
+//        rabbitTemplate.se
+//    }
 }

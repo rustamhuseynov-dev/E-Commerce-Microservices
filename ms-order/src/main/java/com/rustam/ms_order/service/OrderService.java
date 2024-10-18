@@ -7,6 +7,7 @@ import com.rustam.ms_order.repository.OrderRepository;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -15,6 +16,7 @@ import org.springframework.stereotype.Service;
 public class OrderService {
 
     OrderRepository orderRepository;
+    RabbitTemplate rabbitTemplate;
 
     public OrderDto save(OrderDto orderDto) {
         Order order = Order.builder()
@@ -26,5 +28,6 @@ public class OrderService {
     }
 
     public OrderDto read() {
+        rabbitTemplate.se
     }
 }

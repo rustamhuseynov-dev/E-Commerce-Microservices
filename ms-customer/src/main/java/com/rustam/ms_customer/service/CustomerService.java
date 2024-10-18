@@ -20,5 +20,11 @@ public class CustomerService {
                 .name(customerDto.getName())
                 .surname(customerDto.getSurname())
                 .build();
+        customerRepository.save(customer);
+
+        return CustomerDto.builder()
+                .name(customerDto.getName())
+                .surname(customerDto.getSurname())
+                .build();
     }
 }

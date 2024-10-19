@@ -1,0 +1,7 @@
+server:
+  port: 8761  #bu eureka nin default portudur
+
+eureka:
+  client:
+    register-with-eureka: false #Bu parametri "false" etm?kl?, server yaln?z dig?r servisleri idar? edir, amma özünü qeyd etmir.
+    fetch-registry: false  #Y?ni, burada "fetch-registry" false olaraq t?yin olunduqda, bu serverin ba?qa Eureka serverl?rind?n m?lumat ç?km?y?c?yi, sad?c? özünün servislerini idar? ed?c?yi göst?rilir.

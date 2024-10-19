@@ -1,12 +1,14 @@
+server:
+  port: 2000
+
 spring:
+  application:
+    name: api-gateway
   cloud:
     gateway:
-      routes:
-        - id: ms-customer
-          uri: http://localhost:8080
-          predicates:
-            - Path=/v1/customer/**
-        - id: ms-order
-          uri: http://localhost:8081
-          predicates:
-            - Path=/v1/order/**
+      discovery:
+        locator:
+          enabled: true
+      httpclient:
+        connect-timeout: 60000  #Y?ni, API Gateway 60 saniy? ?rzind? ba?lant? yarada bilm?zs?, ba?lant? zaman a??m?na u?rayacaq.
+        response-timeout: 60s  #60 saniy? ?rzind? arxa plandak? servisd?n cavab al?nmazsa, cavab zaman a??m?na u?rayacaq.

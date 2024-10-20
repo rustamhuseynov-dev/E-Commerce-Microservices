@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/api-gateway" />
+    <file type="web" url="file://$PROJECT_DIR$/eureka-server" />
+    <file type="web" url="file://$PROJECT_DIR$/ms-auth" />
+    <file type="web" url="file://$PROJECT_DIR$/ms-config" />
+    <file type="web" url="file://$PROJECT_DIR$/ms-customer" />
     <file type="web" url="file://$PROJECT_DIR$/ms-order" />
     <file type="web" url="file://$PROJECT_DIR$/ms-product" />
   </component>
-  <component name="ProjectRootManager">
+  <component name="ProjectRootManager" version="2" project-jdk-name="17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

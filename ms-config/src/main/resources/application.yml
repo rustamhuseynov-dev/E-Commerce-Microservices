@@ -1,0 +1,13 @@
+server:
+  port: 9297
+
+spring:
+  application:
+    name: ms-config
+  config:
+    import: configserver:http://localhost:8888 # Config Server URL
+  cloud:
+    config:
+      enabled: true 
+
+
